@@ -1,49 +1,20 @@
 - name: GitHub
-  url: http://github.com/phlow
+  url: https://github.com/RobinSeaside
   class: icon-github
-  title: Code und mehr...
+  title: "Discover my codes"
 
-- name: YouTube
-  url: http://www.youtube.com/PhlowMedia
+- name: Weibo
+  url: http://weibo.com/xiaoshou
   class: icon-youtube
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+  title: "Chinese social media"
 
 - name: Twitter
-  url: http://twitter.com/phlow
+  url: https://twitter.com/awang_tjong
   class: icon-twitter
-  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+  title: "Follow cool guys"
 
-- name: Mixcloud
-  url: http://www.mixcloud.com/phlow/
-  class: icon-cloud
-  title: "Mixe, was sonst?"
-
-- name: Phlow YouTube Google+
-  url: https://plus.google.com/u/0/+Phlow
+- name: YouTube Google+
+  url: https://plus.google.com/107679285175234512572
   class: icon-googleplus
   title: "YouTube Google+"
 
-# - name: Facebook
-#   url: http://www.facebook.com/
-#   class: icon-facebook
-#   title: ""
-
-# - name: Soundcloud
-#   url: http://soundcloud.com/
-#   class: icon-soundcloud
-#   title: ""
-
-# - name: Instagram
-#   url: http://instagram.com/
-#   class: icon-instagram
-#   title: ""
-
-# - name: Pinterest
-#   url: http://www.pinterest.com/
-#   class: icon-pinterest
-#   title: ""
-
-# - name: Xing
-#   url: https://www.xing.com/profile/
-#   class: icon-xing
-#   title: Xing Profil
