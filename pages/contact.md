@@ -1,12 +1,14 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact and use our contact form"
+meta_title: "Contact via social media"
 subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+teaser: ""
 permalink: "/contact/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
 
+If you want to contact me, please do it in one of the following ways:
 
- [1]: http://www.wufoo.com/
+* Email: awang.seaside#gmail.com (please replace # with @)
+* Facebook: https://www.facebook.com/washeng.liu
+* Twitter: @awang_tjong
