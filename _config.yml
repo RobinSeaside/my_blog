@@ -14,7 +14,7 @@ title: "RobinSeaside's Personal Website"
 slogan: '1 TB memory'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.'
+description: 'This website is aim to recording interesting stuffs in my personal daily life and work. Stay tuned!'
 
 # The credits show up in the includes/_footer.html
 credits: '<p>Created with &hearts; by <a>LIU Wang-Sheng</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
