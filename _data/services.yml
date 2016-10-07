@@ -1,17 +1,17 @@
 - menu_name: "Services"
 
 - name: "Contact"
-  url: "my_blog/contact/"
+  url: "/my_blog/contact"
   title: "Contact"
 
 - name: "RSS"
-  url: "my_blog/feed.xml"
+  url: "/my_blog/feed.xml"
   title: "Subscribe to RSS Feed"
 
 - name: "Atom"
-  url: "my_blog/atom.xml"
+  url: "/my_blog/atom.xml"
   title: "Subscribe to Atom Feed"
 
-- name: "sitemap.xml"
-  url: "my_blog/sitemap.xml"
+- name: "Sitemap.xml"
+  url: "/my_blog/sitemap.xml"
   title: "Sitemap for Google Webmaster Tools"
