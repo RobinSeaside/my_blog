@@ -9,6 +9,6 @@ permalink: "/contact/"
 
 If you want to contact me, please do it in one of the following ways:
 
-* Email: awang.seaside#gmail.com (please replace # with @)
+* Email: awang.robinseaside#gmail.com (please replace # with @)
 * Facebook: https://www.facebook.com/washeng.liu
 * Twitter: @awang_tjong
