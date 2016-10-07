@@ -14,7 +14,7 @@ title: "RobinSeaside's Personal Website"
 slogan: '1 TB memory'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: 'This website is aim to recording interesting stuffs in my personal daily life and work. Stay tuned!'
+description: 'This website is aimed to record interesting stuffs in my personal daily life and work. Stay tuned!'
 
 # The credits show up in the includes/_footer.html
 credits: '<p>Created with &hearts; by <a>LIU Wang-Sheng</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
@@ -25,8 +25,8 @@ author: LIU Wang-Sheng
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://robinseaside.github.io'
-baseurl: '/my_blog'
+url: 'https://robinseaside.github.io/my_blog'
+baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
