@@ -2,7 +2,7 @@
 layout: page
 title: "Contact"
 meta_title: "Contact via social media"
-subheadline: "Wufoo-powered contact forms"
+subheadline: ""
 teaser: ""
 permalink: "/contact/"
 ---
