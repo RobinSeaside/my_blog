@@ -3,10 +3,10 @@
   class: icon-github
   title: "Discover my codes"
 
-- name: Weibo
-  url: http://weibo.com/xiaoshou
-  class: icon-weibo
-  title: "Chinese social media"
+- name: Facebook
+  url: https://www.facebook.com/washeng.liu
+  class: icon-facebook
+  title: "Follow me"
 
 - name: Twitter
   url: https://twitter.com/awang_tjong
