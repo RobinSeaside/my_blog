@@ -1,11 +1,11 @@
-- menu_name: "Useful links"
+- menu_name: "Usefull links"
 
-- name: "Nanyang Technological University, Singapore"
-  url: "http://entypo.com/"
+- name: "Nanyang Technological University"
+  url: "http://www.ntu.edu.sg/"
   class: "network-entypo"
   title: "Nanyang Technological University"
 
-- name: "Tongji University, China"
-  url: "http://foundation.zurb.com/"
+- name: "Tongji University"
+  url: "http://www.tongji.edu.cn/english/"
   class: "services-newsletter"
   title: "Tongji University"
