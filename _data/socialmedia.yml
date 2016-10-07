@@ -5,13 +5,13 @@
 
 - name: Weibo
   url: http://weibo.com/xiaoshou
-  class: icon-youtube
+  class: icon-weibo
   title: "Chinese social media"
 
 - name: Twitter
   url: https://twitter.com/awang_tjong
   class: icon-twitter
-  title: "Follow cool guys"
+  title: "Follow me"
 
 - name: YouTube Google+
   url: https://plus.google.com/107679285175234512572
