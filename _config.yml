@@ -9,7 +9,7 @@ permalink: /:title
 title: "LIU Wang-Sheng"
 description: "Stay awesome & Stay real"
 baseurl: ""
-url: "https://robinseaside.github.io/my_blog/" # replace by your site's url
+url: "https://robinseaside.github.io/my_blog"
 twitter_username: awang_tjong
 github_username:  RobinSeaside
 linkedin_username:  in/wang-sheng-liu-2a342aa6
