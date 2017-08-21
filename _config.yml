@@ -1,0 +1,31 @@
+safe: false
+
+# build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+permalink: /:title
+
+title: "LIU Wang-Sheng"
+description: "Stay awesome & Stay real"
+baseurl: ""
+url: "https://robinseaside.github.io" # replace by your site's url
+twitter_username: awang_tjong
+github_username:  RobinSeaside
+linkedin_username:  in/wang-sheng-liu-2a342aa6
+accent: "#f7f7e6" # accent color for blog column
+
+author: "LIU Wang-Sheng"
+address: "Your Street, <br>Your City, Country"
+email: "awang.signup@gmail.com"
+
+# google analytics tracking code, please change the value
+g_analytics: ""
+
+# language settings
+isolang: en
+
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
