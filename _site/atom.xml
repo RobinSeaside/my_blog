@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>LIU Wang-Sheng</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000"/>
- <updated>2017-08-21T16:07:46+08:00</updated>
- <id>http://localhost:4000</id>
+ <link href="http://localhost:4000/my_blog/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/my_blog"/>
+ <updated>2017-08-21T16:25:42+08:00</updated>
+ <id>http://localhost:4000/my_blog</id>
  <author>
    <name>LIU Wang-Sheng</name>
    <email>awang.signup@gmail.com</email>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>Bayesian sequential partitioning</title>
-   <link href="http://localhost:4000#2017-08-21-06"/>
+   <link href="http://localhost:4000/my_blog#2017-08-21-06"/>
    <updated>2017-08-21T06:00:00+08:00</updated>
    <id>/BSP</id>
    <content type="html">&lt;p&gt;Details about my first publication&lt;/p&gt;
@@ -23,7 +23,7 @@
  
  <entry>
    <title>Bayesian sequential partitioning</title>
-   <link href="http://localhost:4000#2017-08-21-06"/>
+   <link href="http://localhost:4000/my_blog#2017-08-21-06"/>
    <updated>2017-08-21T06:00:00+08:00</updated>
    <id>/AnotherBSP</id>
    <content type="html">&lt;p&gt;Details about my first publication&lt;/p&gt;
