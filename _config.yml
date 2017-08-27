@@ -2,6 +2,8 @@ safe: false
 
 # build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: rouge
 lsi: false
 permalink: /:title
