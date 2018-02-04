@@ -3,10 +3,10 @@
   <channel>
     <title>LIU Wang-Sheng</title>
     <description>Stay awesome &amp; Stay real</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 22:30:45 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 22:30:45 +0800</lastBuildDate>
+    <link>http://localhost:4000/my_blog/</link>
+    <atom:link href="http://localhost:4000/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 04 Feb 2018 22:52:13 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Feb 2018 22:52:13 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -44,8 +44,8 @@
 
 </description>
         <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>http://localhost:4000#2018-02-04-16</link>
-        <guid isPermaLink="true">/posts/fraud-detection-introduction</guid>
+        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
+        <guid isPermaLink="true">/blog/fraud-detection-introduction</guid>
         
         <category>chinese</category>
         
@@ -75,8 +75,8 @@
 
 </description>
         <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>http://localhost:4000#2018-02-04-16</link>
-        <guid isPermaLink="true">/posts/dev-log</guid>
+        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
+        <guid isPermaLink="true">/blog/dev-log</guid>
         
         <category>log</category>
         
@@ -122,8 +122,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 27 Aug 2017 22:55:00 +0800</pubDate>
-        <link>http://localhost:4000#2017-08-27-22</link>
-        <guid isPermaLink="true">/posts/BinarySearch</guid>
+        <link>http://localhost:4000/my_blog#2017-08-27-22</link>
+        <guid isPermaLink="true">/blog/BinarySearch</guid>
         
         <category>algorithm</category>
         
@@ -149,8 +149,8 @@ Nanyang technological&lt;/p&gt;
 &lt;p&gt;linkedin&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>http://localhost:4000#2017-08-22-04</link>
-        <guid isPermaLink="true">/posts/Introduction</guid>
+        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
+        <guid isPermaLink="true">/blog/Introduction</guid>
         
         
       </item>
@@ -172,8 +172,8 @@ Nanyang technological&lt;/p&gt;
 &lt;p&gt;linkedin&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>http://localhost:4000#2017-08-22-04</link>
-        <guid isPermaLink="true">/posts/CV</guid>
+        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
+        <guid isPermaLink="true">/blog/CV</guid>
         
         <category>cv</category>
         
@@ -194,8 +194,8 @@ Nanyang technological&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 21 Aug 2017 06:00:00 +0800</pubDate>
-        <link>http://localhost:4000#2017-08-21-06</link>
-        <guid isPermaLink="true">/posts/BSP</guid>
+        <link>http://localhost:4000/my_blog#2017-08-21-06</link>
+        <guid isPermaLink="true">/blog/BSP</guid>
         
         <category>cv</category>
         
