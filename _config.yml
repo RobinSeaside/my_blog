@@ -12,8 +12,8 @@ permalink: /posts/:title/
 # Site settings
 title: "LIU Wang-Sheng"
 description: "Stay awesome & Stay real"
-baseurl: "/my_blog"
-url: "https://robinseaside.github.io/my_blog"
+baseurl: ""
+url: ""
 twitter_username: awang_tjong
 github_username:  RobinSeaside
 linkedin_username:  in/wang-sheng-liu-2a342aa6
