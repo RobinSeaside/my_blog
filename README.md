@@ -1,4 +1,5 @@
-# Welcome to my personal website. Let share ideas that change the world.
+# Welcome to my personal website.  
+* Let share the ideas that change the world.
 
 # Notes
 

@@ -1,13 +1,15 @@
 safe: false
 
-# build settings
+# Build settings
 markdown: kramdown
 kramdown:
   input: GFM
 highlighter: rouge
 lsi: false
-permalink: /:title
+excerpt_separator: "<!-- more -->"
+permalink: /posts/:title/
 
+# Site settings
 title: "LIU Wang-Sheng"
 description: "Stay awesome & Stay real"
 baseurl: "/my_blog"
@@ -21,13 +23,13 @@ author: "LIU Wang-Sheng"
 address: "Your Street, <br>Your City, Country"
 email: "awang.signup@gmail.com"
 
-# google analytics tracking code, please change the value
+# Google analytics tracking code, please change the value
 g_analytics: ""
 
-# language settings
+# Language settings
 isolang: en
 
-# exclude files
+# Exclude files
 exclude:
   - LICENSE
   - README.md

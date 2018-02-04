@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: default
 title:  "On binary search"
 date:   2017-08-27 22:55:00 +0800
+if_home: True
 tags: ['algorithm', 'search']
 author: "LIU Wang-Sheng"
 ---
@@ -10,6 +11,8 @@ author: "LIU Wang-Sheng"
 Binary Search (BS) a.k.a. half-interval search, is a search algorithm that finds the position of a target value within a **sorted** array[^1]. Specifically, assume the array has been sorted in ascending order, first the algorithm compares the target value to the middle element of the array; if equal, the search ends with the position of the target value is the position of the middle element, otherwise, the array is divided into left and right parts by taking the middle element as the boundary, and search in the left (right) part if the target value is smaller (larger) than the middle element; the search continues until the target value is found in the array (successful) or the array to be searched becomes empty (unsuccessful).
 
 BS is widely used due to its low level of computational complexity. BS requires O(log(n)) comparisons in the worst case. And the worst-case space complexity is O(1). Despite its search efficiency, the drawback is that the array must be sorted before searching and therefore operations such as insert and delete elements are difficult to implement.
+
+<!-- more -->
 
 # Python code block
 ~~~ python

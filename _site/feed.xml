@@ -5,9 +5,182 @@
     <description>Stay awesome &amp; Stay real</description>
     <link>http://localhost:4000/my_blog/</link>
     <atom:link href="http://localhost:4000/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Aug 2017 16:42:21 +0800</pubDate>
-    <lastBuildDate>Mon, 21 Aug 2017 16:42:21 +0800</lastBuildDate>
+    <pubDate>Sun, 04 Feb 2018 22:16:45 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Feb 2018 22:16:45 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>[简单总结] 用机器学习反欺诈 (Fraud Detection)</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;什么是反欺诈？&lt;/h1&gt;
+&lt;p&gt;根据Cambridge Dictionary，欺诈(Fraud)定义为：通过欺骗获取物质或者货币的犯罪行为。自古以来，欺诈广泛地存在在商业活动中，所谓“无奸不商，无商不奸”。随着互联网的快速发展，犯罪分子越来越多地利用电信和网络进行诈骗，且手段不断更新进化。目前反欺诈的重点主要包括网上购物（商家卖假货）、银行业务（信用卡欺诈）、互联网优惠券、保险业务等。&lt;/p&gt;
+
+&lt;p&gt;魔高一尺，道高一丈。反欺诈技术也在不断地进步，从起初的黑名单到现在基于深度网络的recurrent neural network。方法和算法将在下文做详细介绍。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;常用算法&lt;/h1&gt;
+&lt;p&gt;在介绍算法之前，我们先来总结下反欺诈问题建模的主要难点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;问题难定义。欺诈手段的不断变化，我们不可能期望训练完成的模型能识别所有欺诈。&lt;/li&gt;
+  &lt;li&gt;标注成本高。每一个欺诈正样本的获取必须识别并验证这是一次欺诈行为。这个过程很有可能需要人工去搜集证据去核实，费时费力。这就造成了整个数据集中正负样本往往表现为极大的不平衡。&lt;/li&gt;
+  &lt;li&gt;负样本噪声大，存在异常值。大体来说，欺诈行为具有隐蔽性，识别难度很高，标记为负样本的记录同样可能是一次欺诈。这就意味着负样本实际上是正样本，我们打错了标签。&lt;/li&gt;
+  &lt;li&gt;欺诈手段是不断进化的，新的欺诈手段不停出现。这就要求我们不断地更新和进化模型，或者模型本身要包含时间这一个重要的变量。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h2 id=&quot;supervised-learning&quot;&gt;有监督学习(supervised learning)&lt;/h2&gt;
+&lt;p&gt;建模为分类或回归问题，用RL, random forest, NN等算法&lt;br /&gt;
+&lt;strong&gt;缺点&lt;/strong&gt;：需要大量的已标记好的数据&lt;br /&gt;
+&lt;strong&gt;优点&lt;/strong&gt;：可解释性强&lt;/p&gt;
+
+&lt;h2 id=&quot;unsupervised-learning&quot;&gt;无监督学习(unsupervised learning)&lt;/h2&gt;
+&lt;p&gt;建模为聚类或者异常值检测问题。可用概率图模型，异常值检测较为常用是周志华老师提出的isolation forest (已经在sklearn中实现)，聚类可用k-means, GMM等模型。&lt;br /&gt;
+&lt;strong&gt;缺点&lt;/strong&gt;：可解释性差，结果不可控&lt;br /&gt;
+&lt;strong&gt;优点&lt;/strong&gt;：无需标签，用图模型可以提高解释性&lt;/p&gt;
+
+&lt;h2 id=&quot;rules&quot;&gt;规则(rules)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：需要有经验作为支撑，来提出规则；需要不断改进规则来适应具体问题的变化&lt;br /&gt;
+&lt;strong&gt;优点&lt;/strong&gt;：可快速部署，准确率高&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
+        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
+        <guid isPermaLink="true">/posts/fraud-detection-introduction</guid>
+        
+        <category>chinese</category>
+        
+        <category>fraud detection</category>
+        
+        <category>tutorial</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Recent updates</title>
+        <description>&lt;h2 id=&quot;todo-list&quot;&gt;TODO list&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Remove share buttons;&lt;/li&gt;
+  &lt;li&gt;Add “Previous page” and “Next page”;&lt;/li&gt;
+  &lt;li&gt;Add achive;&lt;/li&gt;
+  &lt;li&gt;Add tags;&lt;/li&gt;
+  &lt;li&gt;Comments;&lt;/li&gt;
+  &lt;li&gt;Google statistics;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;2018-02-04: add post layout; add navigation;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
+        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
+        <guid isPermaLink="true">/posts/dev-log</guid>
+        
+        <category>log</category>
+        
+        <category>todo</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>On binary search</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Binary Search (BS) a.k.a. half-interval search, is a search algorithm that finds the position of a target value within a &lt;strong&gt;sorted&lt;/strong&gt; array&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Specifically, assume the array has been sorted in ascending order, first the algorithm compares the target value to the middle element of the array; if equal, the search ends with the position of the target value is the position of the middle element, otherwise, the array is divided into left and right parts by taking the middle element as the boundary, and search in the left (right) part if the target value is smaller (larger) than the middle element; the search continues until the target value is found in the array (successful) or the array to be searched becomes empty (unsuccessful).&lt;/p&gt;
+
+&lt;p&gt;BS is widely used due to its low level of computational complexity. BS requires O(log(n)) comparisons in the worst case. And the worst-case space complexity is O(1). Despite its search efficiency, the drawback is that the array must be sorted before searching and therefore operations such as insert and delete elements are difficult to implement.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;python-code-block&quot;&gt;Python code block&lt;/h1&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;binary_search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;    
+    &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;        
+        &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# the indice of the middle element      &lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;        
+        &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;        
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;          
+            &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;    
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# tval is not in the list, return none&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;notes&quot;&gt;Notes&lt;/h1&gt;
+&lt;p&gt;BS is efficient and can be applied to different types of problems; for specialized data structures (e.g., Hash table), they can be seached even faster.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;https://en.wikipedia.org/wiki/Binary_search_algorithm &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 27 Aug 2017 22:55:00 +0800</pubDate>
+        <link>http://localhost:4000/my_blog#2017-08-27-22</link>
+        <guid isPermaLink="true">/posts/BinarySearch</guid>
+        
+        <category>algorithm</category>
+        
+        <category>search</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Curriculum Vitae</title>
+        <description>&lt;h1 id=&quot;education&quot;&gt;Education&lt;/h1&gt;
+&lt;p&gt;Tongji University
+Nanyang technological&lt;/p&gt;
+
+&lt;h1 id=&quot;experiences&quot;&gt;Experiences&lt;/h1&gt;
+
+&lt;h1 id=&quot;publications&quot;&gt;Publications&lt;/h1&gt;
+
+&lt;h1 id=&quot;skills&quot;&gt;Skills&lt;/h1&gt;
+&lt;p&gt;Machine learning, density estimation, programming&lt;/p&gt;
+
+&lt;h1 id=&quot;updated-cv&quot;&gt;Updated CV&lt;/h1&gt;
+&lt;p&gt;linkedin&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
+        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
+        <guid isPermaLink="true">/posts/Introduction</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Curriculum Vitae</title>
+        <description>&lt;h1 id=&quot;education&quot;&gt;Education&lt;/h1&gt;
+&lt;p&gt;Tongji University
+Nanyang technological&lt;/p&gt;
+
+&lt;h1 id=&quot;experiences&quot;&gt;Experiences&lt;/h1&gt;
+
+&lt;h1 id=&quot;publications&quot;&gt;Publications&lt;/h1&gt;
+
+&lt;h1 id=&quot;skills&quot;&gt;Skills&lt;/h1&gt;
+&lt;p&gt;Machine learning, density estimation, programming&lt;/p&gt;
+
+&lt;h1 id=&quot;updated-cv&quot;&gt;Updated CV&lt;/h1&gt;
+&lt;p&gt;linkedin&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
+        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
+        <guid isPermaLink="true">/posts/CV</guid>
+        
+        <category>cv</category>
+        
+        <category>welcome</category>
+        
+        
+      </item>
     
       <item>
         <title>Bayesian sequential partitioning</title>
@@ -22,22 +195,11 @@
 </description>
         <pubDate>Mon, 21 Aug 2017 06:00:00 +0800</pubDate>
         <link>http://localhost:4000/my_blog#2017-08-21-06</link>
-        <guid isPermaLink="true">/BSP</guid>
+        <guid isPermaLink="true">/posts/BSP</guid>
         
         <category>cv</category>
         
         <category>welcome</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Bayesian sequential partitioning</title>
-        <description>&lt;p&gt;Details about my first publication&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Aug 2017 06:00:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2017-08-21-06</link>
-        <guid isPermaLink="true">/AnotherBSP</guid>
         
         
       </item>

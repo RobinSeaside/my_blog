@@ -31,6 +31,10 @@
 		</div>
 		<div class="unit two-thirds blog-column">
 			<div class="grid">
+			    <h1>{{ page.title }}<br>
+			    <small class="chip">{{ page.date | date: "%b %-d, %Y" }}</small>
+			    <a class="chip" href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ page.date | date: "%F-%H" | prepend:"#" | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET </a>
+			    </h1>
 				{{ content }}
 			</div>
 		</div>
