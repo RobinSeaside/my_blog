@@ -1,51 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ site.isolang }}" itemscope itemtype="http://schema.org/WebPage">
+---
+layout: default
+--- 
 
-{% include head.html %}
-
-<body class="wrap wider">
-	<div class="grid">
-		<div id="/home" class="unit one-third">
-			<div class="grid">
-				<div class="unit whole" id="/home">
-				<img src="{{ "/images/favicon.png" | prepend: site.baseurl }}" alt="Avatar" style="width:304px;height:228px;">
-					<h1>{{ site.title }}</h1>
-					<p>{{ site.description }}</p>
-				</div>
-				<div class="unit whole" id="/contact">
-					<a href="https://twitter.com/{{ site.twitter_username }}" class="twitter-icon btn"><i class="icon ion-social-twitter"></i></a>
-					<a href="https://github.com/{{ site.github_username }}" class="github-icon btn"><i class="icon ion-social-github"></i></a>
-					<a href="https://www.linkedin.com/{{ site.linkedin_username }}" class="linkedin-icon btn"><i class="icon ion-social-linkedin"></i></a>
-					<a href="mailto:{{ site.email }}" class="mail-icon btn"><i class="icon ion-email"></i></a>
-				</div>
-				<div class="unit whole hide-on-mobiles" id="/about">
-					{% include about.html %}
-				</div>
-				<div class="unit whole hide-on-mobiles" id="/categories">
-					{% include navigations.html %}
-				</div>
-				<!-- <div class="unit whole hide-on-mobiles" id="/recommended">
-					{% include recommended.html %}
-				</div> -->
-			</div>
-		</div>
-		<div class="unit two-thirds blog-column">
-			<div class="grid">
-			    <h1>{{ page.title }}<br>
-			    <small class="chip">{{ page.date | date: "%b %-d, %Y" }}</small>
-			    <a class="chip" href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ page.date | date: "%F-%H" | prepend:"#" | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET </a>
-			    </h1>
-				{{ content }}
-			</div>
-		</div>
-
-		<div class="unit whole hide-on-desktops" id="/projects">
-			{% include projects.html %}
-		</div>
-		<div class="unit whole hide-on-desktops" id="/impressum">
-			{% include imprint.html %}
-		</div>
-	</div>
-</body>
-
-</html>
+<h1>{{ page.title }}<br>
+	<small class="chip">{{ page.date | date: "%b %-d, %Y" }}</small>
+	<a class="chip" href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ post.url | absolute_url }}"><i class="icon ion-social-twitter"></i> TWEET </a>
+</h1>
+<div class="post-content">
+	{{ content }}
+</div>
+<div class="PageNavigation">
+	{% if page.previous.url %}
+		<a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>
+	{% endif %}
+	{% if page.next.url %}
+		<a class="next" href="{{page.next.url}}">Next &raquo;</a>
+	{% endif %}
+</div>

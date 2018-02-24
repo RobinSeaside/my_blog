@@ -8,8 +8,8 @@ layout: default
 	<article itemscope itemtype="http://schema.org/BlogPosting">
 		<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a><br>
 		<small class="chip">{{ post.date | date: "%b %-d, %Y" }}</small>
-		<a class="chip" href="https://twitter.com/intent/tweet?text={{ post.title | cgi_escape }}&url={{ post.date | date: "%F-%H" | prepend: "#" | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET</a>
-		<a class="chip" href="{{ site.url }}{{ site.baseurl }}#{{ post.date | date: "%F-%H" }}"><i class="icon ion-android-share-alt"></i> LINK</a>
+		<a class="chip" href="https://twitter.com/intent/tweet?text={{ post.title | cgi_escape }}&url={{ post.url | absolute_url}}"><i class="icon ion-social-twitter"></i> TWEET</a>
+		<a class="chip" href="{{ post.url | absolute_url }}"><i class="icon ion-android-share-alt"></i> LINK</a>
 		</h2>
 		
 		<div class="post-content">

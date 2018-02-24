@@ -18,10 +18,10 @@
 					<a href="https://www.linkedin.com/{{ site.linkedin_username }}" class="linkedin-icon btn"><i class="icon ion-social-linkedin"></i></a>
 					<a href="mailto:{{ site.email }}" class="mail-icon btn"><i class="icon ion-email"></i></a>
 				</div>
-				<div class="unit whole hide-on-mobiles" id="/about">
+				<div class="unit whole" id="/about">
 					{% include about.html %}
 				</div>
-				<div class="unit whole hide-on-mobiles" id="/categories">
+				<div class="unit whole" id="/categories">
 					{% include navigations.html %}
 				</div>
 				<!-- <div class="unit whole hide-on-mobiles" id="/recommended">
@@ -33,13 +33,6 @@
 			<div class="grid">
 				{{ content }}
 			</div>
-		</div>
-
-		<div class="unit whole hide-on-desktops" id="/projects">
-			{% include projects.html %}
-		</div>
-		<div class="unit whole hide-on-desktops" id="/impressum">
-			{% include imprint.html %}
 		</div>
 	</div>
 </body>

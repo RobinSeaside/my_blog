@@ -3,10 +3,10 @@
   <channel>
     <title>LIU Wang-Sheng</title>
     <description>Stay awesome &amp; Stay real</description>
-    <link>http://localhost:4000/my_blog/</link>
-    <atom:link href="http://localhost:4000/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 22:52:13 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 22:52:13 +0800</lastBuildDate>
+    <link>https://robinseaside.github.io/my_blog/</link>
+    <atom:link href="https://robinseaside.github.io/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 24 Feb 2018 20:28:01 +0800</pubDate>
+    <lastBuildDate>Sat, 24 Feb 2018 20:28:01 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -44,7 +44,7 @@
 
 </description>
         <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
+        <link>https://robinseaside.github.io/my_blog#2018-02-04-16</link>
         <guid isPermaLink="true">/blog/fraud-detection-introduction</guid>
         
         <category>chinese</category>
@@ -60,22 +60,23 @@
         <title>Recent updates</title>
         <description>&lt;h2 id=&quot;todo-list&quot;&gt;TODO list&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;Remove share buttons;&lt;/li&gt;
   &lt;li&gt;Add “Previous page” and “Next page”;&lt;/li&gt;
-  &lt;li&gt;Add achive;&lt;/li&gt;
+  &lt;li&gt;Add archive;&lt;/li&gt;
   &lt;li&gt;Add tags;&lt;/li&gt;
   &lt;li&gt;Comments;&lt;/li&gt;
   &lt;li&gt;Google statistics;&lt;/li&gt;
+  &lt;li&gt;Copyright in default layout;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;2018-02-04: add post layout; add navigation;&lt;/li&gt;
+  &lt;li&gt;2018-02-24: Modify share buttons (posturl);&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
+        <link>https://robinseaside.github.io/my_blog#2018-02-04-16</link>
         <guid isPermaLink="true">/blog/dev-log</guid>
         
         <category>log</category>
@@ -122,7 +123,7 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 27 Aug 2017 22:55:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2017-08-27-22</link>
+        <link>https://robinseaside.github.io/my_blog#2017-08-27-22</link>
         <guid isPermaLink="true">/blog/BinarySearch</guid>
         
         <category>algorithm</category>
@@ -149,7 +150,7 @@ Nanyang technological&lt;/p&gt;
 &lt;p&gt;linkedin&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
+        <link>https://robinseaside.github.io/my_blog#2017-08-22-04</link>
         <guid isPermaLink="true">/blog/Introduction</guid>
         
         
@@ -172,7 +173,7 @@ Nanyang technological&lt;/p&gt;
 &lt;p&gt;linkedin&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
+        <link>https://robinseaside.github.io/my_blog#2017-08-22-04</link>
         <guid isPermaLink="true">/blog/CV</guid>
         
         <category>cv</category>
@@ -194,7 +195,7 @@ Nanyang technological&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 21 Aug 2017 06:00:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2017-08-21-06</link>
+        <link>https://robinseaside.github.io/my_blog#2017-08-21-06</link>
         <guid isPermaLink="true">/blog/BSP</guid>
         
         <category>cv</category>
