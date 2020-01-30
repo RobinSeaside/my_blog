@@ -1,9 +1,0 @@
-I"<h1 id="education">Education</h1>
-<p>目前，神经网络在很多方面的推断能力已经超过了人类。但是，我们不仅希望神经网络能推断以帮助我们决策，还希望它对做出的决策进行解释，即神经网络需要具备一定的可解释性(Interpretability)。Google Brain的这篇论文提供了一个用户接口，使神经网络能向“人”解释它看到了什么，以及它做出最终决定的依据。该接口整合了特征可视化、归因、以及降维等增强解释性的方法。</p>
-
-<h1 id="news">News</h1>
-<ul>
-  <li><em style="color: red; fond-weight: bold">18 NOV 2019</em>: I am excited to join Singapore-ETH Center! I will be working on the project - <em>distributed cognition enabled by data science</em>.
-<!-- more --></li>
-</ul>
-:ET
