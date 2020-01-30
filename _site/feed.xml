@@ -3,11 +3,37 @@
   <channel>
     <title>LIU Wang-Sheng</title>
     <description>Stay awesome &amp; Stay real</description>
-    <link>https://robinseaside.github.io/my_blog/</link>
-    <atom:link href="https://robinseaside.github.io/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Mar 2018 21:12:40 +0800</pubDate>
-    <lastBuildDate>Sun, 11 Mar 2018 21:12:40 +0800</lastBuildDate>
-    <generator>Jekyll v3.5.2</generator>
+    <link>http://localhost:4000/my_blog/</link>
+    <atom:link href="http://localhost:4000/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 30 Jan 2020 21:49:42 +0800</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2020 21:49:42 +0800</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Welcome!</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“In the morning I walked down the Boulevard to the rue Soufflot for coffee and brioche. It was a fine morning. The horse-chestnut trees in the Luxembourg gardens were in bloom. There was the pleasant early-morning feeling of a hot day. I read the papers with the coffee and then smoked a cigarette. The flower-women were coming up from the market and arranging their daily stock. Students went by going up to the law school, or down to the Sorbonne. The Boulevard was busy with trams and people going to work.”     – &lt;em&gt;The Sun Also Rises&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;news&quot;&gt;News&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em style=&quot;color:blue; font-size:140%; fond-weight:bold;&quot;&gt;18 NOV 2019&lt;/em&gt;: I am excited to join Singapore-ETH Center! I will be working on the project - &lt;em&gt;Distributed Cognition Enabled by Data Science&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;em style=&quot;color:blue; font-size:140%; fond-weight:bold;&quot;&gt;11 NOV 2019&lt;/em&gt;: Check out my oral presentation in Micron Technical Leadership Programme !
+&lt;!-- more --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 30 Jan 2020 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/my_blog#2020-01-30-20</link>
+        <guid isPermaLink="true">/blog/about-me-and-updates</guid>
+        
+        <category>computer vision</category>
+        
+        <category>interpretability</category>
+        
+        <category>deep learning</category>
+        
+        
+      </item>
     
       <item>
         <title>[挑事儿] 就算你把文章糊我脸上，这神经网络呐，还是那个黑箱</title>
@@ -17,7 +43,7 @@
 
 &lt;!-- more --&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;一个解释神经网络的用户接口&lt;/h1&gt;
+&lt;h1 id=&quot;一个解释神经网络的用户接口&quot;&gt;一个解释神经网络的用户接口&lt;/h1&gt;
 &lt;p&gt;目前，神经网络在很多方面的推断能力已经超过了人类。但是，我们不仅希望神经网络能推断以帮助我们决策，还希望它对做出的决策进行解释，即神经网络需要具备一定的可解释性(Interpretability)。Google Brain的这篇论文提供了一个用户接口，使神经网络能向“人”解释它看到了什么，以及它做出最终决定的依据。该接口整合了特征可视化、归因、以及降维等增强解释性的方法。&lt;/p&gt;
 
 &lt;p&gt;首先，这篇论文在可视化输入层和输出层的基础上，试图通过可视化(feature visualization)回答神经网络在隐藏层中看到了什么。这一步非常重要，因为每个隐藏层都能利用激活器对输入数据产生一个新的表征。从计算的角度，一个激活器（即单个神经元）表示为一个抽象的向量，因此很难从中得出相应的意义。而利用特征可视化可以把向量和一个更容易理解得”语义词典”进行一一对应。语义词典使我们能把神经网络学到的抽象向量和常规的实际概念联系起来。需要注意的是，尽管我们非常希望用明确的词语来概括每个语义词典，但这个操作是有损的。因为神经网络可能已经学到了人类无法察觉的细微差别，甚至它学到的概念是人类认知里没有的。更进一步，在每一个隐藏层，我们可以对同一空间位置的所有激活器对应的语义词典进行叠加，得到该位置叠加后的语义词典；根据激活程度的大小，我们可以比较各个空间位置探测到的特征强弱程度。&lt;/p&gt;
@@ -26,9 +52,9 @@
 
 &lt;p&gt;最后一步，神经网络的解释必须被“人”所理解，即最终展示的数据量必须是人类尺度，而不是一大堆纷杂的信息。在前面两步中，每一个隐藏层可以用三种方式进行划分：空间激活器集，通道激活器集，或者单个神经元。显然，任何以上任何一种划分都很难反映这个该隐藏层的整体状况。另一个问题是，这种划分方式最终信息太多了，试想，如果对每层几万的神经元进行特征可视化，我们几乎不能得到有用的结论，即便通过空间激活器集进行划分，几百个激活器集也很难描述。为了解决这个问题，文中采用矩阵因式分解的成组技术，如下图所示，最终大量的神经元被划分为很小数量的组（grouping）来更简洁地描述该隐藏层所见所想。隐藏层的矩阵因式分解过程本质上是一个权衡人类尺度和减少损失信息的过程，往往建模成多目标的最优化问题。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://robinseaside.github.io/my_blog/images/blog_images/slicing_a_hidden_layer.png&quot; alt=&quot;slicing_a_hidden_layer.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/my_blog/images/blog_images/slicing_a_hidden_layer.png&quot; alt=&quot;slicing_a_hidden_layer.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;神经网络还是不是黑箱？&lt;/h1&gt;
+&lt;h1 id=&quot;神经网络还是不是黑箱&quot;&gt;神经网络还是不是黑箱？&lt;/h1&gt;
 &lt;p&gt;黑箱通常定义为，非基于物理定律的数学模型。黑箱包含的函数往往有很强的灵活性和泛化能力，但只是根据输入给出输出而不能解释模型参数对最终预测所起的作用。&lt;/p&gt;
 
 &lt;p&gt;我们不希望我们的模型是一个黑箱。因为拆开黑箱，往往意味着: (i) 在知道模型性能决定因素的基础上，预测模型实际生产中的表现；(ii) 探测到模型中可能存在的偏见（一定程度上与数据有关）；(iii) 为建立更有效的模型提供洞察力。&lt;/p&gt;
@@ -49,12 +75,12 @@
 
 &lt;p&gt;我们可能不喜欢黑箱，但不可否认黑箱的强大能力。神经网络对于各个方向的空间扩展以及不同空间域之间的相互作用能力，显示了其巨大的应用潜力。&lt;/p&gt;
 
-&lt;h1 id=&quot;distill&quot;&gt;关于distill&lt;/h1&gt;
+&lt;h1 id=&quot;关于distill&quot;&gt;关于distill&lt;/h1&gt;
 &lt;p&gt;这篇文章发表在distill，这个去年推出的论文网站背后是Google Brain中诸如Ian Goodfellow的大神。distill上的论文在网上发表，采用便于网上阅读的格式，采用交互图片，同时也有doi和传统文章发表的同行评审过程。目前，arXiv上的文章不断抢占idea高地，对idea的理论推导和具体implementation有意无意的忽视；学术期刊上的文章，又饱受各大出版商(elsivier, springer)的压榨。正如某云说的，“银行不改变，我们就来改变银行”，distill仿佛在说：“出版商不改变，我们就来改变出版商”。&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 10 Mar 2018 20:00:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2018-03-10-20</link>
+        <link>http://localhost:4000/my_blog#2018-03-10-20</link>
         <guid isPermaLink="true">/blog/interpretability-building-blocks</guid>
         
         <category>computer vision</category>
@@ -68,12 +94,12 @@
     
       <item>
         <title>[简单总结] 用机器学习反欺诈 (Fraud Detection)</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;什么是反欺诈？&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;什么是反欺诈&quot;&gt;什么是反欺诈？&lt;/h1&gt;
 &lt;p&gt;根据Cambridge Dictionary，欺诈(Fraud)定义为：通过欺骗获取物质或者货币的犯罪行为。自古以来，欺诈广泛地存在在商业活动中，所谓“无奸不商，无商不奸”。随着互联网的快速发展，犯罪分子越来越多地利用电信和网络进行诈骗，且手段不断更新进化。目前反欺诈的重点主要包括网上购物（商家卖假货）、银行业务（信用卡欺诈）、互联网优惠券、保险业务等。&lt;/p&gt;
 
 &lt;p&gt;魔高一尺，道高一丈。反欺诈技术也在不断地进步，从起初的黑名单到现在基于深度网络的recurrent neural network。方法和算法将在下文做详细介绍。&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;常用算法&lt;/h1&gt;
+&lt;h1 id=&quot;常用算法&quot;&gt;常用算法&lt;/h1&gt;
 &lt;p&gt;在介绍算法之前，我们先来总结下反欺诈问题建模的主要难点：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -85,23 +111,23 @@
 
 &lt;!-- more --&gt;
 
-&lt;h2 id=&quot;supervised-learning&quot;&gt;有监督学习(supervised learning)&lt;/h2&gt;
+&lt;h2 id=&quot;有监督学习supervised-learning&quot;&gt;有监督学习(supervised learning)&lt;/h2&gt;
 &lt;p&gt;建模为分类或回归问题，用RL, random forest, NN等算法&lt;br /&gt;
 &lt;strong&gt;缺点&lt;/strong&gt;：需要大量的已标记好的数据&lt;br /&gt;
 &lt;strong&gt;优点&lt;/strong&gt;：可解释性强&lt;/p&gt;
 
-&lt;h2 id=&quot;unsupervised-learning&quot;&gt;无监督学习(unsupervised learning)&lt;/h2&gt;
+&lt;h2 id=&quot;无监督学习unsupervised-learning&quot;&gt;无监督学习(unsupervised learning)&lt;/h2&gt;
 &lt;p&gt;建模为聚类或者异常值检测问题。可用概率图模型，异常值检测较为常用是周志华老师提出的isolation forest (已经在sklearn中实现)，聚类可用k-means, GMM等模型。&lt;br /&gt;
 &lt;strong&gt;缺点&lt;/strong&gt;：可解释性差，结果不可控&lt;br /&gt;
 &lt;strong&gt;优点&lt;/strong&gt;：无需标签，用图模型可以提高解释性&lt;/p&gt;
 
-&lt;h2 id=&quot;rules&quot;&gt;规则(rules)&lt;/h2&gt;
+&lt;h2 id=&quot;规则rules&quot;&gt;规则(rules)&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：需要有经验作为支撑，来提出规则；需要不断改进规则来适应具体问题的变化&lt;br /&gt;
 &lt;strong&gt;优点&lt;/strong&gt;：可快速部署，准确率高&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2018-02-04-16</link>
+        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
         <guid isPermaLink="true">/blog/fraud-detection-introduction</guid>
         
         <category>chinese</category>
@@ -133,7 +159,7 @@
 
 </description>
         <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2018-02-04-16</link>
+        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
         <guid isPermaLink="true">/blog/dev-log</guid>
         
         <category>log</category>
@@ -153,20 +179,19 @@
 &lt;!-- more --&gt;
 
 &lt;h1 id=&quot;python-code-block&quot;&gt;Python code block&lt;/h1&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;binary_search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;    
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;binary_search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;    
     &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;        
-        &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# the indice of the middle element      &lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# the indice of the middle element      
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;        
         &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;        
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;          
             &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;    
-     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# tval is not in the list, return none&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# tval is not in the list, return none
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;notes&quot;&gt;Notes&lt;/h1&gt;
 &lt;p&gt;BS is efficient and can be applied to different types of problems; for specialized data structures (e.g., Hash table), they can be seached even faster.&lt;/p&gt;
@@ -174,13 +199,13 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;https://en.wikipedia.org/wiki/Binary_search_algorithm &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;https://en.wikipedia.org/wiki/Binary_search_algorithm &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 27 Aug 2017 22:55:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2017-08-27-22</link>
+        <link>http://localhost:4000/my_blog#2017-08-27-22</link>
         <guid isPermaLink="true">/blog/BinarySearch</guid>
         
         <category>algorithm</category>
@@ -207,7 +232,7 @@ Nanyang technological&lt;/p&gt;
 &lt;p&gt;linkedin&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2017-08-22-04</link>
+        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
         <guid isPermaLink="true">/blog/Introduction</guid>
         
         
@@ -230,7 +255,7 @@ Nanyang technological&lt;/p&gt;
 &lt;p&gt;linkedin&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2017-08-22-04</link>
+        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
         <guid isPermaLink="true">/blog/CV</guid>
         
         <category>cv</category>
@@ -252,7 +277,7 @@ Nanyang technological&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 21 Aug 2017 06:00:00 +0800</pubDate>
-        <link>https://robinseaside.github.io/my_blog#2017-08-21-06</link>
+        <link>http://localhost:4000/my_blog#2017-08-21-06</link>
         <guid isPermaLink="true">/blog/BSP</guid>
         
         <category>cv</category>

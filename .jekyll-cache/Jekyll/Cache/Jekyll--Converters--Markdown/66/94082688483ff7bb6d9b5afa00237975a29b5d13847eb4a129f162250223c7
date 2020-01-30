@@ -1,0 +1,17 @@
+I"<h2 id="todo-list">TODO list</h2>
+<ul>
+  <li>Add “Previous page” and “Next page”;</li>
+  <li>Add archive;</li>
+  <li>Add tags;</li>
+  <li>Comments;</li>
+  <li>Google statistics;</li>
+  <li>Copyright in default layout;</li>
+</ul>
+
+<h2 id="log">Log</h2>
+<ul>
+  <li>2018-02-04: add post layout; add navigation;</li>
+  <li>2018-02-24: Modify share buttons (posturl);</li>
+</ul>
+
+:ET

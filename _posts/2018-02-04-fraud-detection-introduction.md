@@ -2,7 +2,7 @@
 layout: post
 title:  "[简单总结] 用机器学习反欺诈 (Fraud Detection)"
 date:   2018-02-04 16:26:00 +0800
-if_home: True
+if_home: False 
 tags: ['chinese', 'fraud detection', 'tutorial']
 author: "LIU Wang-Sheng"
 ---

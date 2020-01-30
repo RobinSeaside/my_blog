@@ -2,7 +2,7 @@
 layout: post
 title:  "[挑事儿] 就算你把文章糊我脸上，这神经网络呐，还是那个黑箱"
 date:   2018-03-10 20:00:00 +0800
-if_home: True
+if_home: False
 tags: ['computer vision', 'interpretability', 'deep learning']
 author: "LIU Wang-Sheng"
 ---

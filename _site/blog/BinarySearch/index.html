@@ -12,18 +12,18 @@
     <meta name="author" content="LIU Wang-Sheng">
     <meta itemprop="name" content="LIU Wang-Sheng">
 
-    <meta property="og:url" content="https://robinseaside.github.io" />
+    <meta property="og:url" content="http://localhost:4000" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="LIU Wang-Sheng" />
     <meta property="og:description" content="Stay awesome & Stay real" />
-    <meta property="og:image" content="https://robinseaside.github.io/images/favicon.png" />
+    <meta property="og:image" content="http://localhost:4000/images/favicon.png" />
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@awang_tjong" />
     <meta name="twitter:title" content="LIU Wang-Sheng" />
     <meta name="twitter:description" content="Stay awesome & Stay real" />
-    <meta name="twitter:image" content="https://robinseaside.github.io/images/favicon.png" />
+    <meta name="twitter:image" content="http://localhost:4000/images/favicon.png" />
 
     <link href="/my_blog/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM feed">
     <link href="/my_blog/feed.xml" type="application/rss+xml" rel="alternate" title="RSS feed">
@@ -58,8 +58,8 @@
 				<div class="unit whole" id="/about">
 					<h4>About me</h4>
 <ul>
-    <p><small>PhD candidate <br> Nanyang Technological University</small></p>
-    <p><small>My main research interest is to develop algorithms for uncertainty-related problems such as stochastic optimization, reliability analysis and machine learning.</small></p>
+    <p><small>PhD <br>Future Resilient Systems | Singapore-ETH Centre</small></p>
+    <p><small>I develop algorithms for uncertainty quantification, convex optimization and Bayesian inference with a focus on rare events.</small></p>
 </ul>
 
 				</div>
@@ -67,16 +67,16 @@
 					<h4>Navigation</h4>
 <ul>
     <li>
-      <p><a href="https://robinseaside.github.io/my_blog/">Home</a></p>
+      <p><a href="http://localhost:4000/my_blog/">Home</a></p>
     </li>
     <li>
-      <p><a>Recommendations</a><br><small>Favourite blogs</small></p>
+      <p><a>Blogs</a><br><small>Life, research, project management, etc.</small></p>
     </li>
     <li>
-      <p><a>Machine learing competitions</a><br><small>Discussions about Kaggle competitions</small></p>
+      <p><a>Downloads</a><br><small>Software and datasets</small></p>
     </li>
     <li>
-      <p><a>Algorithms</a><br><small>Optimization, reliability analysis, stochastic simulaiton, etc.</small></p>
+      <p><a>Contact</a><br><small>Pin me</small></p>
     </li>
 </ul>
 				</div>
@@ -110,20 +110,19 @@
 <!-- more -->
 
 <h1 id="python-code-block">Python code block</h1>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">tval</span><span class="p">):</span>    
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">tval</span><span class="p">):</span>    
     <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">high</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>        
-        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>    <span class="c"># the indice of the middle element      </span>
-        <span class="k">if</span> <span class="n">data_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">tval</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>    <span class="c1"># the indice of the middle element      
+</span>        <span class="k">if</span> <span class="n">data_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">tval</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">mid</span>        
         <span class="k">elif</span> <span class="n">data_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">tval</span><span class="p">:</span>
             <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>        
         <span class="k">else</span><span class="p">:</span>          
             <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>    
-     <span class="k">return</span>    <span class="c"># tval is not in the list, return none</span>
-</code></pre>
-</div>
+     <span class="k">return</span>    <span class="c1"># tval is not in the list, return none
+</span></code></pre></div></div>
 
 <h1 id="notes">Notes</h1>
 <p>BS is efficient and can be applied to different types of problems; for specialized data structures (e.g., Hash table), they can be seached even faster.</p>
@@ -131,7 +130,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>https://en.wikipedia.org/wiki/Binary_search_algorithm <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>https://en.wikipedia.org/wiki/Binary_search_algorithm <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

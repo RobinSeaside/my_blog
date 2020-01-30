@@ -12,18 +12,18 @@
     <meta name="author" content="LIU Wang-Sheng">
     <meta itemprop="name" content="LIU Wang-Sheng">
 
-    <meta property="og:url" content="https://robinseaside.github.io" />
+    <meta property="og:url" content="http://localhost:4000" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="LIU Wang-Sheng" />
     <meta property="og:description" content="Stay awesome & Stay real" />
-    <meta property="og:image" content="https://robinseaside.github.io/images/favicon.png" />
+    <meta property="og:image" content="http://localhost:4000/images/favicon.png" />
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@awang_tjong" />
     <meta name="twitter:title" content="LIU Wang-Sheng" />
     <meta name="twitter:description" content="Stay awesome & Stay real" />
-    <meta name="twitter:image" content="https://robinseaside.github.io/images/favicon.png" />
+    <meta name="twitter:image" content="http://localhost:4000/images/favicon.png" />
 
     <link href="/my_blog/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM feed">
     <link href="/my_blog/feed.xml" type="application/rss+xml" rel="alternate" title="RSS feed">
@@ -58,8 +58,8 @@
 				<div class="unit whole" id="/about">
 					<h4>About me</h4>
 <ul>
-    <p><small>PhD candidate <br> Nanyang Technological University</small></p>
-    <p><small>My main research interest is to develop algorithms for uncertainty-related problems such as stochastic optimization, reliability analysis and machine learning.</small></p>
+    <p><small>PhD <br>Future Resilient Systems | Singapore-ETH Centre</small></p>
+    <p><small>I develop algorithms for uncertainty quantification, convex optimization and Bayesian inference with a focus on rare events.</small></p>
 </ul>
 
 				</div>
@@ -67,16 +67,16 @@
 					<h4>Navigation</h4>
 <ul>
     <li>
-      <p><a href="https://robinseaside.github.io/my_blog/">Home</a></p>
+      <p><a href="http://localhost:4000/my_blog/">Home</a></p>
     </li>
     <li>
-      <p><a>Recommendations</a><br><small>Favourite blogs</small></p>
+      <p><a>Blogs</a><br><small>Life, research, project management, etc.</small></p>
     </li>
     <li>
-      <p><a>Machine learing competitions</a><br><small>Discussions about Kaggle competitions</small></p>
+      <p><a>Downloads</a><br><small>Software and datasets</small></p>
     </li>
     <li>
-      <p><a>Algorithms</a><br><small>Optimization, reliability analysis, stochastic simulaiton, etc.</small></p>
+      <p><a>Contact</a><br><small>Pin me</small></p>
     </li>
 </ul>
 				</div>
@@ -113,7 +113,7 @@
 
 <!-- more -->
 
-<h1 id="section">一个解释神经网络的用户接口</h1>
+<h1 id="一个解释神经网络的用户接口">一个解释神经网络的用户接口</h1>
 <p>目前，神经网络在很多方面的推断能力已经超过了人类。但是，我们不仅希望神经网络能推断以帮助我们决策，还希望它对做出的决策进行解释，即神经网络需要具备一定的可解释性(Interpretability)。Google Brain的这篇论文提供了一个用户接口，使神经网络能向“人”解释它看到了什么，以及它做出最终决定的依据。该接口整合了特征可视化、归因、以及降维等增强解释性的方法。</p>
 
 <p>首先，这篇论文在可视化输入层和输出层的基础上，试图通过可视化(feature visualization)回答神经网络在隐藏层中看到了什么。这一步非常重要，因为每个隐藏层都能利用激活器对输入数据产生一个新的表征。从计算的角度，一个激活器（即单个神经元）表示为一个抽象的向量，因此很难从中得出相应的意义。而利用特征可视化可以把向量和一个更容易理解得”语义词典”进行一一对应。语义词典使我们能把神经网络学到的抽象向量和常规的实际概念联系起来。需要注意的是，尽管我们非常希望用明确的词语来概括每个语义词典，但这个操作是有损的。因为神经网络可能已经学到了人类无法察觉的细微差别，甚至它学到的概念是人类认知里没有的。更进一步，在每一个隐藏层，我们可以对同一空间位置的所有激活器对应的语义词典进行叠加，得到该位置叠加后的语义词典；根据激活程度的大小，我们可以比较各个空间位置探测到的特征强弱程度。</p>
@@ -122,9 +122,9 @@
 
 <p>最后一步，神经网络的解释必须被“人”所理解，即最终展示的数据量必须是人类尺度，而不是一大堆纷杂的信息。在前面两步中，每一个隐藏层可以用三种方式进行划分：空间激活器集，通道激活器集，或者单个神经元。显然，任何以上任何一种划分都很难反映这个该隐藏层的整体状况。另一个问题是，这种划分方式最终信息太多了，试想，如果对每层几万的神经元进行特征可视化，我们几乎不能得到有用的结论，即便通过空间激活器集进行划分，几百个激活器集也很难描述。为了解决这个问题，文中采用矩阵因式分解的成组技术，如下图所示，最终大量的神经元被划分为很小数量的组（grouping）来更简洁地描述该隐藏层所见所想。隐藏层的矩阵因式分解过程本质上是一个权衡人类尺度和减少损失信息的过程，往往建模成多目标的最优化问题。</p>
 
-<p><img src="https://robinseaside.github.io/my_blog/images/blog_images/slicing_a_hidden_layer.png" alt="slicing_a_hidden_layer.png" /></p>
+<p><img src="http://localhost:4000/my_blog/images/blog_images/slicing_a_hidden_layer.png" alt="slicing_a_hidden_layer.png" /></p>
 
-<h1 id="section-1">神经网络还是不是黑箱？</h1>
+<h1 id="神经网络还是不是黑箱">神经网络还是不是黑箱？</h1>
 <p>黑箱通常定义为，非基于物理定律的数学模型。黑箱包含的函数往往有很强的灵活性和泛化能力，但只是根据输入给出输出而不能解释模型参数对最终预测所起的作用。</p>
 
 <p>我们不希望我们的模型是一个黑箱。因为拆开黑箱，往往意味着: (i) 在知道模型性能决定因素的基础上，预测模型实际生产中的表现；(ii) 探测到模型中可能存在的偏见（一定程度上与数据有关）；(iii) 为建立更有效的模型提供洞察力。</p>
@@ -145,7 +145,7 @@
 
 <p>我们可能不喜欢黑箱，但不可否认黑箱的强大能力。神经网络对于各个方向的空间扩展以及不同空间域之间的相互作用能力，显示了其巨大的应用潜力。</p>
 
-<h1 id="distill">关于distill</h1>
+<h1 id="关于distill">关于distill</h1>
 <p>这篇文章发表在distill，这个去年推出的论文网站背后是Google Brain中诸如Ian Goodfellow的大神。distill上的论文在网上发表，采用便于网上阅读的格式，采用交互图片，同时也有doi和传统文章发表的同行评审过程。目前，arXiv上的文章不断抢占idea高地，对idea的理论推导和具体implementation有意无意的忽视；学术期刊上的文章，又饱受各大出版商(elsivier, springer)的压榨。正如某云说的，“银行不改变，我们就来改变银行”，distill仿佛在说：“出版商不改变，我们就来改变出版商”。</p>
 
 
@@ -154,6 +154,8 @@
 	
 		<a class="prev" href="/blog/fraud-detection-introduction/">&laquo; Previous</a>
 	
+	
+		<a class="next" href="/blog/about-me-and-updates/">Next &raquo;</a>
 	
 </div>
 
