@@ -5,8 +5,8 @@
     <description>Stay awesome &amp; Stay real</description>
     <link>http://localhost:4000/my_blog/</link>
     <atom:link href="http://localhost:4000/my_blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Jan 2020 22:05:36 +0800</pubDate>
-    <lastBuildDate>Thu, 30 Jan 2020 22:05:36 +0800</lastBuildDate>
+    <pubDate>Fri, 28 Feb 2020 15:01:36 +0800</pubDate>
+    <lastBuildDate>Fri, 28 Feb 2020 15:01:36 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -140,36 +140,6 @@
       </item>
     
       <item>
-        <title>Recent updates</title>
-        <description>&lt;h2 id=&quot;todo-list&quot;&gt;TODO list&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Add “Previous page” and “Next page”;&lt;/li&gt;
-  &lt;li&gt;Add archive;&lt;/li&gt;
-  &lt;li&gt;Add tags;&lt;/li&gt;
-  &lt;li&gt;Comments;&lt;/li&gt;
-  &lt;li&gt;Google statistics;&lt;/li&gt;
-  &lt;li&gt;Copyright in default layout;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;2018-02-04: add post layout; add navigation;&lt;/li&gt;
-  &lt;li&gt;2018-02-24: Modify share buttons (posturl);&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 04 Feb 2018 16:26:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2018-02-04-16</link>
-        <guid isPermaLink="true">/blog/dev-log</guid>
-        
-        <category>log</category>
-        
-        <category>todo</category>
-        
-        
-      </item>
-    
-      <item>
         <title>On binary search</title>
         <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Binary Search (BS) a.k.a. half-interval search, is a search algorithm that finds the position of a target value within a &lt;strong&gt;sorted&lt;/strong&gt; array&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Specifically, assume the array has been sorted in ascending order, first the algorithm compares the target value to the middle element of the array; if equal, the search ends with the position of the target value is the position of the middle element, otherwise, the array is divided into left and right parts by taking the middle element as the boundary, and search in the left (right) part if the target value is smaller (larger) than the middle element; the search continues until the target value is found in the array (successful) or the array to be searched becomes empty (unsuccessful).&lt;/p&gt;
@@ -211,29 +181,6 @@
         <category>algorithm</category>
         
         <category>search</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Curriculum Vitae</title>
-        <description>&lt;h1 id=&quot;education&quot;&gt;Education&lt;/h1&gt;
-&lt;p&gt;Tongji University
-Nanyang technological&lt;/p&gt;
-
-&lt;h1 id=&quot;experiences&quot;&gt;Experiences&lt;/h1&gt;
-
-&lt;h1 id=&quot;publications&quot;&gt;Publications&lt;/h1&gt;
-
-&lt;h1 id=&quot;skills&quot;&gt;Skills&lt;/h1&gt;
-&lt;p&gt;Machine learning, density estimation, programming&lt;/p&gt;
-
-&lt;h1 id=&quot;updated-cv&quot;&gt;Updated CV&lt;/h1&gt;
-&lt;p&gt;linkedin&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Aug 2017 04:10:00 +0800</pubDate>
-        <link>http://localhost:4000/my_blog#2017-08-22-04</link>
-        <guid isPermaLink="true">/blog/Introduction</guid>
         
         
       </item>

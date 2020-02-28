@@ -4,7 +4,8 @@
       <p><a href="{{ "/" | absolute_url }}">Home</a></p>
     </li>
     <li>
-      <p><a href="/my_blog/tagpage.html"></a>Blogs</a><br><small>Life, research, project management, etc.</small></p>
+      {% assign ref = site.baseurl | append: "/tabs/archives" %}
+      <p><a href="{{ ref }}">Blog Archives</a><br><small>Life, research, project management, etc.</small></p>
     </li>
     <li>
       <p><a>Downloads</a><br><small>Software and datasets</small></p>

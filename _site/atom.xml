@@ -4,7 +4,7 @@
  <title>LIU Wang-Sheng</title>
  <link href="http://localhost:4000/my_blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/my_blog"/>
- <updated>2020-01-30T22:05:36+08:00</updated>
+ <updated>2020-02-28T15:01:36+08:00</updated>
  <id>http://localhost:4000/my_blog</id>
  <author>
    <name>LIU Wang-Sheng</name>
@@ -119,30 +119,6 @@
  </entry>
  
  <entry>
-   <title>Recent updates</title>
-   <link href="http://localhost:4000/my_blog#2018-02-04-16"/>
-   <updated>2018-02-04T16:26:00+08:00</updated>
-   <id>/blog/dev-log</id>
-   <content type="html">&lt;h2 id=&quot;todo-list&quot;&gt;TODO list&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Add “Previous page” and “Next page”;&lt;/li&gt;
-  &lt;li&gt;Add archive;&lt;/li&gt;
-  &lt;li&gt;Add tags;&lt;/li&gt;
-  &lt;li&gt;Comments;&lt;/li&gt;
-  &lt;li&gt;Google statistics;&lt;/li&gt;
-  &lt;li&gt;Copyright in default layout;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;2018-02-04: add post layout; add navigation;&lt;/li&gt;
-  &lt;li&gt;2018-02-24: Modify share buttons (posturl);&lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
- </entry>
- 
- <entry>
    <title>On binary search</title>
    <link href="http://localhost:4000/my_blog#2017-08-27-22"/>
    <updated>2017-08-27T22:55:00+08:00</updated>
@@ -179,27 +155,6 @@
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Curriculum Vitae</title>
-   <link href="http://localhost:4000/my_blog#2017-08-22-04"/>
-   <updated>2017-08-22T04:10:00+08:00</updated>
-   <id>/blog/Introduction</id>
-   <content type="html">&lt;h1 id=&quot;education&quot;&gt;Education&lt;/h1&gt;
-&lt;p&gt;Tongji University
-Nanyang technological&lt;/p&gt;
-
-&lt;h1 id=&quot;experiences&quot;&gt;Experiences&lt;/h1&gt;
-
-&lt;h1 id=&quot;publications&quot;&gt;Publications&lt;/h1&gt;
-
-&lt;h1 id=&quot;skills&quot;&gt;Skills&lt;/h1&gt;
-&lt;p&gt;Machine learning, density estimation, programming&lt;/p&gt;
-
-&lt;h1 id=&quot;updated-cv&quot;&gt;Updated CV&lt;/h1&gt;
-&lt;p&gt;linkedin&lt;/p&gt;
 </content>
  </entry>
  
