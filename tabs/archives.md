@@ -10,7 +10,7 @@ title: "Archive"
   {% if forloop.first %}
     {% assign last_day = "" %}
     {% assign last_month = "" %}
-  <span class="lead">{{this_year}}</span>
+  <span class="lead"><h4>{{this_year}}</h4></span>
   <ul class="list-unstyled">
   {% endif %}
     <li>
