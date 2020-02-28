@@ -34,6 +34,6 @@ isolang: en
 exclude:
   - LICENSE
   - README.md
-  - vender
+  - vendor
   - Gemfile.lock
   - Gemfile
