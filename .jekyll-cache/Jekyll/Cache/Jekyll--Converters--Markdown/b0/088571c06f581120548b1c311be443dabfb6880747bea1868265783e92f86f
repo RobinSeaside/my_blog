@@ -1,0 +1,28 @@
+I"�<blockquote>
+  <p>根据美国疾病预防中心(CDC)的数据，从2019年9月29日到2020年3月10日，美国流感人数超过3400万，其中死亡人数达2万。美国马萨诸塞大学公共健康与健康科学的教授 <a href="https://www.umass.edu/sphhs/person/faculty/nicholas-g-reich">Nicholas G. Reich</a>追踪了类流感疾病在美国的病例数量，认为新冠病毒可能早已在美国传播。<strong>申明：1. 每条生命都值得重视！2. 这篇文章不是为了挑起对立，研究病毒的起源对疫苗开发和类似疾病预防至关重要。3. 我不是医学专业，如本文有不准确的信息请联系我。</strong></p>
+</blockquote>
+
+<!-- more -->
+
+<h1 id="数据和指标">数据和指标</h1>
+<p>Reich教授的论文相关资料都托管在github(<a href="https://github.com/reichlab/ncov/">点我</a>)。Reich教授的原推特截图如下，感兴趣的可以直接点这个链接(<a href="https://twitter.com/reichlab/status/1241174589079572480">点我</a>)查看。推特底下很多人留言说早在2019年11月就出现流感症状和很严重的肺炎，但是流感测试呈阴性。</p>
+
+<p><strong>数据来源</strong></p>
+
+<p>Reich教授的分析基于两个数据集：(1) ILINet (2) WHO-NREVSS。所有数据都是以星期（CDC定义的MMWR）为单位。研究结果的展示采用两种粒度：(1) 美国HHS划分的区域 (2) 联邦各州。对于第一种粒度，使用从1997/1998到2019/2020，总共23季的数据；对于第二种粒度，使用了从2010/2011到2019/2020，总共10季的数据。</p>
+
+<p><strong>指标</strong></p>
+
+<p>该团队提出了rILI- (relavie percentage of influenza illness not attributable to influenza) 指标，即类流感疾病中病因并非流感病毒的相对比例。换言只，该指标高，则表明有流感症状的人群中很有可能是别的病毒或细菌引起的。虽然不能得出其他病因就是新冠病毒，但也不能排除可能性。</p>
+
+<p>同时，由rILI可以计算得到Z值。Z值越高表明rILI超出历史平均值越明显。</p>
+<h1 id="已有证据">已有证据</h1>
+<ul>
+  <li>CDC承认</li>
+</ul>
+
+<h1 id="如何获取更多证据">如何获取更多证据</h1>
+<ul>
+  <li>查抗体</li>
+</ul>
+:ET

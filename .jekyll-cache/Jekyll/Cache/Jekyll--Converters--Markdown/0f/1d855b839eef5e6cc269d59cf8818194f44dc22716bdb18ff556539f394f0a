@@ -1,12 +1,26 @@
-I"O	<div id="archives" class="pl-xl-2">
+I"�<div id="archives" class="pl-xl-2">
 
   
   
   
     
     
-  <span class="lead">2020</span>
+  <span class="lead"><h4>2020</h4></span>
   <ul class="list-unstyled">
+  
+    <li>
+      <div>
+        
+        
+        <span class="date day">21</span>
+        <span class="date month small text-muted">Mar</span>
+        <a href="/my_blog/blog/covid19-originate/">新冠病毒是否早于中国爆发前已经在美国传播？</a>
+      </div>
+    </li>
+  
+
+  
+  
   
     <li>
       <div>
@@ -52,20 +66,6 @@
       </div>
     </li>
   
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">04</span>
-        <span class="date month small text-muted">Feb</span>
-        <a href="/my_blog/blog/dev-log/">Recent updates</a>
-      </div>
-    </li>
-  
   </ul>
   <span class="lead">2017</span>
   <ul class="list-unstyled">
@@ -83,20 +83,6 @@
         <span class="date day">27</span>
         <span class="date month small text-muted">Aug</span>
         <a href="/my_blog/blog/BinarySearch/">On binary search</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">22</span>
-        <span class="date month small text-muted">Aug</span>
-        <a href="/my_blog/blog/Introduction/">Curriculum Vitae</a>
       </div>
     </li>
   
